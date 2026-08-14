@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Configurações do dispos…",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "ta8N5DqkyEGccLFRzdUyvA",
+  "Reference": "AG5LAJT17UaZmNwoUIa7FA/ta8N5DqkyEGccLFRzdUyvA",
+  "ParentRef": "AG5LAJT17UaZmNwoUIa7FA/64aRoPLqYEiJgpgsvScimQ",
+  "Created": "2025-12-02T20:57:32.9528989Z",
+  "Updated": "2025-12-02T20:57:32.9528989Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

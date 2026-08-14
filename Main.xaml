@@ -1,0 +1,674 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Semantic.Activities</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography</AssemblyReference>
+      <AssemblyReference>System.Security.Principal.Windows</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.Process</AssemblyReference>
+      <AssemblyReference>System.IO.MemoryMappedFiles</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Registry</AssemblyReference>
+      <AssemblyReference>System.IO.Pipes</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
+      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
+      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
+      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
+      <AssemblyReference>System.Net.WebClient</AssemblyReference>
+      <AssemblyReference>System.Net.Requests</AssemblyReference>
+      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>System.Threading.AccessControl</AssemblyReference>
+      <AssemblyReference>System.Threading</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>System.Threading.Tasks.Parallel</AssemblyReference>
+      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
+      <AssemblyReference>System.Text.Encodings.Web</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Security.Claims</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.Pkcs</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.ProtectedData</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.CompilerServices.VisualC</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms</AssemblyReference>
+      <AssemblyReference>System.Resources.Writer</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>Microsoft.PowerShell.Commands.Diagnostics</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.FileVersionInfo</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.PerformanceCounter</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.DiagnosticSource</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TraceSource</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.EventLog</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TextWriterTraceListener</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.StackTrace</AssemblyReference>
+      <AssemblyReference>System.Collections.Concurrent</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Net.Security</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Private.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xml.XPath.XDocument</AssemblyReference>
+      <AssemblyReference>System.Net.NetworkInformation</AssemblyReference>
+      <AssemblyReference>System.Net.Ping</AssemblyReference>
+      <AssemblyReference>System.Net.Sockets</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualStudio.Validation</AssemblyReference>
+      <AssemblyReference>Microsoft.CodeAnalysis.Features</AssemblyReference>
+      <AssemblyReference>System.Management.Automation</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1281,8899" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:StartProcess WorkingDirectory="{x:Null}" Arguments="[&quot;/c schtasks /run /tn &quot;&quot;\Criados\Kill RGB Processes&quot;&quot;&quot;]" ContinueOnError="True" DisplayName="Execute the CMD command `schtasks /run /tn &quot;\Criados\Kill RGB Processes&quot;`." FileName="cmd.exe" sap:VirtualizedContainerService.HintSize="632,120" sap2010:WorkflowViewState.IdRef="StartProcess_3" />
+    <NoPersistScope DisplayName="No Persist Scope" sap:VirtualizedContainerService.HintSize="632,248" sap2010:WorkflowViewState.IdRef="NoPersistScope_3">
+      <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="Delay_2" />
+    </NoPersistScope>
+    <ui:StartProcess Arguments="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Start Process" FileName="C:\Program Files\LGHUB\system_tray\lghub_system_tray.exe" sap:VirtualizedContainerService.HintSize="632,120" sap2010:WorkflowViewState.IdRef="StartProcess_1" />
+    <NoPersistScope DisplayName="No Persist Scope" sap:VirtualizedContainerService.HintSize="632,248" sap2010:WorkflowViewState.IdRef="NoPersistScope_4">
+      <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="Delay_1" />
+    </NoPersistScope>
+    <ui:StartProcess WorkingDirectory="{x:Null}" Arguments="[&quot;/c schtasks /run /tn &quot;&quot;\Criados\SignalRgb Admin&quot;&quot;&quot;]" ContinueOnError="True" DisplayName="Execute the CMD command `schtasks /run /tn &quot;\Criados\Kill RGB Processes&quot;`." FileName="cmd.exe" sap:VirtualizedContainerService.HintSize="632,120" sap2010:WorkflowViewState.IdRef="StartProcess_4" />
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="632,282" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,171" sap2010:WorkflowViewState.IdRef="Sequence_15">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:StartProcess Arguments="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Start Process" FileName="C:\Users\Gabriel\AppData\Local\VortxEngine\SignalRgbLauncher.exe" sap:VirtualizedContainerService.HintSize="416,111" sap2010:WorkflowViewState.IdRef="StartProcess_2" />
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+    <ui:RetryScope RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="632,7738" sap2010:WorkflowViewState.IdRef="RetryScope_1" LogRetriedExceptions="True" NumberOfRetries="[Cint(2^31-1)]">
+      <ui:RetryScope.ActivityBody>
+        <ActivityAction>
+          <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="630,7620" sap2010:WorkflowViewState.IdRef="Sequence_21">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="ui:UiElement" Name="ghub" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="596,722" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+              <TryCatch.Try>
+                <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="486,531" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Always]" ContinueOnError="True" DisplayName="Use Application: Logitech G HUB" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,471" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="Simulate" IsDisplayNameAuto="True" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="3bd7d647-5aa2-44d2-9141-54a6b85dd008" Timeout="5" Version="V2">
+                    <uix:NApplicationCard.Body>
+                      <ActivityAction x:TypeArguments="x:Object">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,225" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NWindowOperation DelayAfter="0" DelayBefore="0" DisplayName="Window Operation - Close window" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,165" sap2010:WorkflowViewState.IdRef="NWindowOperation_2" Operation="Close" ScopeIdentifier="3bd7d647-5aa2-44d2-9141-54a6b85dd008" Version="V5" />
+                        </Sequence>
+                      </ActivityAction>
+                    </uix:NApplicationCard.Body>
+                    <uix:NApplicationCard.OCREngine>
+                      <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                        <ActivityFunc.Argument>
+                          <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                        </ActivityFunc.Argument>
+                      </ActivityFunc>
+                    </uix:NApplicationCard.OCREngine>
+                    <uix:NApplicationCard.TargetApp>
+                      <uix:TargetApp Area="-8, -8, 1936, 1044" FilePath="C:\Program Files\LGHUB\lghub.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPUSURBVFhHzVc7S1xREN7EQnZ9K7qjq9gJNmojFpZWYq0g+Ci20B9g5QOsFBtLm5BOkCBa+AJRRBu1swhIOkHQIgkEic99TfiGO5fZu/euK4ZsBobznu+7c+bMOTcUChAi+kBEJaYNiRPRFyL6RkS/iSjjKOrowxjmkFlXAluu4UKEiD5CnXo7EX0mol9ExAYUdau2H3Oxpt1r71UxwGEiWiaipAFIOZo2gKro03ElgrWwEba2A0VdTkRtRPTVMQKDMAQA75cGeQBzsQZr0YatNouRIwa8m4h+OgsTxmgmGo0KWGNjIzc1NXEsFpO29nvIaAkbqMNmt8Wy4Ha/fzgLXNdHo1ExCFBobW0tRyIRUQUPIGG3AiVsu3HhJREhogsfcPeLy8rKuLy8nDs7O3l4eJjj8bj0+4B7iVibwIhYYHU9ggUT1GUCDoD6+noBHxwc5KOjI354eGDIzc0Nt7a2yrgPsB8Jtb1ssVHpMPstquB1dXVSrq+vC2gmk+F0Oi31q6urQgkoCVVgdVgvfHImiZuw53A7DDc3N/P5+bkAJpNJfnl54VQqJe3b29u3EnAxgKngMSL67mEpX11RUcGbm5sCZoEfHx/55OSEFxcX5SS8EgNeEkoEmDEQQOpEhyQQGINRRPj4+Lj75Qp+fHzMPT09EhPhcLggcM8cEND8EAeBNUsAdbi/pqaGT09PBTSRSEh5eHjIVVVVXFlZKSShejT9FOOwlYfAGghcOg1Jr1gAkN7eXvlyBB0Ekd/V1cXV1dUSFzAKxbGEt+ARzQ22jZzh8QIIaFa9BIE7MyCs4dqJiQkBfn5+lnJra0v6AY55DQ0N3NLSwqurq7y/v887Ozu8u7vr6vb2tmzXyMiIkIRHPF5AeQcCNscLgdLSUp6fnxfgp6cnKZeWlqRf0y8iHycAJwGiR1MF3oPMzc1lrfMQSL+bwPX1tYzjlCBWAAxVz83MzLxKwHcLJicnxUDQFigBZEOI9QDiRj0wOzubj4BswZuCEGMahJjb19fH/f39PDAwIGtWVlayiPtsQU4QFnwMDw4Oco4h6khYmB8KhXhqakrm6tb5eCDnGAYmorGxMTGSLxHpTYkTgTXT09My7/7+XkqfGMhJRHlT8cbGhhjypmIQWVhYEMMgjW0BEACtBzxb4Np3U/HfuowAgPM+OjoqW7e3t8dnZ2eSzp08oMDZl1Eh1zHIFHodY74+XFCaTOjazrqO3/IgGRoayvsg0ZNh7wPnLtCv93+QOI13P8kCbkZ9zPo/yRzw/+JRWrxnuUpRf0xUivprplLUn1OVf/V7/gdYLo6LtHX/bwAAAABJRU5ErkJggg==" InformativeScreenshot="e6565e880c0125a93c4d99f3c82c7300.png" Selector="&lt;wnd app='lghub.exe' cls='Chrome_WidgetWin_1' title='Logitech G HUB' /&gt;" Version="V2">
+                        <uix:TargetApp.Arguments>
+                          <InArgument x:TypeArguments="x:String" />
+                        </uix:TargetApp.Arguments>
+                        <uix:TargetApp.WorkingDirectory>
+                          <InArgument x:TypeArguments="x:String" />
+                        </uix:TargetApp.WorkingDirectory>
+                      </uix:TargetApp>
+                    </uix:NApplicationCard.TargetApp>
+                  </uix:NApplicationCard>
+                </Sequence>
+              </TryCatch.Try>
+              <TryCatch.Catches>
+                <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                  <ActivityAction x:TypeArguments="s:Exception">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="486,25" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Sequence>
+                  </ActivityAction>
+                </Catch>
+              </TryCatch.Catches>
+              <TryCatch.Finally>
+                <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="486,25" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </TryCatch.Finally>
+            </TryCatch>
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Always]" DisplayName="Logitech G HUB" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="596,6838" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="Simulate" OutUiElement="[ghub]" ScopeGuid="e0b8ce94-49e3-42fa-9b13-d0d152629179" Version="V2" WindowResize="Maximize">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="594,6592" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="iluminacao" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Sequence DisplayName="Esperar Carregar" sap:VirtualizedContainerService.HintSize="560,1186" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:Boolean" Name="carregou" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign sap:VirtualizedContainerService.HintSize="488,175" sap2010:WorkflowViewState.IdRef="Assign_7">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Boolean">[carregou]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Boolean">[False]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="488,919" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_4">
+                        <ui:InterruptibleDoWhile.Body>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="486,797" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NCheckState DelayBefore="0" DisplayName="Check App State 'Dispositivos'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,737" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="e0b8ce94-49e3-42fa-9b13-d0d152629179" Timeout="1" Version="V5">
+                              <uix:NCheckState.IfExists>
+                                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Assign sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="Assign_8">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Boolean">[carregou]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Boolean">[True]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                </Sequence>
+                              </uix:NCheckState.IfExists>
+                              <uix:NCheckState.IfNotExists>
+                                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Assign sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="Assign_9">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Boolean">[carregou]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Boolean">[False]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                </Sequence>
+                              </uix:NCheckState.IfNotExists>
+                              <uix:NCheckState.Target>
+                                <uix:TargetAnchorable CVScreenId="4303472e-c836-49dd-abff-3db596685928" DesignTimeRectangle="112, 47, 110, 50" ElementType="ListItem" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='G HUB' role='document' /&gt;&lt;ctrl name='Cabeçalho do aplicativo' role='grouping' /&gt;&lt;ctrl name='Dispositivos' role='list item' /&gt;" Guid="b3f83c38-f3e3-4013-a1a1-b642d6f0588b" InformativeScreenshot="e821afcf8ee108c44caf81aa13fbd566.png" ScopeSelectorArgument="&lt;wnd app='lghub.exe' cls='Chrome_WidgetWin_1' title='Logitech G HUB' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                              </uix:NCheckState.Target>
+                            </uix:NCheckState>
+                          </Sequence>
+                        </ui:InterruptibleDoWhile.Body>
+                        <ui:InterruptibleDoWhile.Condition>
+                          <VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="Not carregou" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_1" />
+                        </ui:InterruptibleDoWhile.Condition>
+                      </ui:InterruptibleDoWhile>
+                    </Sequence>
+                    <uix:NCheckState DelayBefore="0" DisplayName="Check App State 'G903 LIGHTSPEED'" EnableIfExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="560,2044" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="e0b8ce94-49e3-42fa-9b13-d0d152629179" Timeout="5" Version="V5">
+                      <uix:NCheckState.IfExists>
+                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,94" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </uix:NCheckState.IfExists>
+                      <uix:NCheckState.IfNotExists>
+                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="558,1758" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NCheckState DelayBefore="0" DisplayName="Check App State 'Ative ou ligue seu disp…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="524,1698" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="e0b8ce94-49e3-42fa-9b13-d0d152629179" Timeout="1" Version="V5">
+                            <uix:NCheckState.IfExists>
+                              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="522,1388" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                <Sequence.Variables>
+                                  <Variable x:TypeArguments="x:Boolean" Name="carregou" />
+                                </Sequence.Variables>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign sap:VirtualizedContainerService.HintSize="488,175" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:Boolean">[carregou]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:Boolean">[False]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                                <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="488,1153" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+                                  <ui:InterruptibleDoWhile.Body>
+                                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="486,1031" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <uix:NCheckState DelayBefore="0" DisplayName="Check App State 'Ative ou ligue seu disp…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,971" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="e0b8ce94-49e3-42fa-9b13-d0d152629179" Timeout="1" Version="V5">
+                                        <uix:NCheckState.IfExists>
+                                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <Assign sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                              <Assign.To>
+                                                <OutArgument x:TypeArguments="x:Boolean">[carregou]</OutArgument>
+                                              </Assign.To>
+                                              <Assign.Value>
+                                                <InArgument x:TypeArguments="x:Boolean">[False]</InArgument>
+                                              </Assign.Value>
+                                            </Assign>
+                                          </Sequence>
+                                        </uix:NCheckState.IfExists>
+                                        <uix:NCheckState.IfNotExists>
+                                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,460" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <Assign sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                              <Assign.To>
+                                                <OutArgument x:TypeArguments="x:Boolean">[carregou]</OutArgument>
+                                              </Assign.To>
+                                              <Assign.Value>
+                                                <InArgument x:TypeArguments="x:Boolean">[True]</InArgument>
+                                              </Assign.Value>
+                                            </Assign>
+                                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Main - Invoke Workflow File (Main.xaml)" sap:VirtualizedContainerService.HintSize="416,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Main.xaml">
+                                              <ui:InvokeWorkflowFile.Arguments>
+                                                <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                                              </ui:InvokeWorkflowFile.Arguments>
+                                            </ui:InvokeWorkflowFile>
+                                            <ui:Return sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="Return_1" />
+                                          </Sequence>
+                                        </uix:NCheckState.IfNotExists>
+                                        <uix:NCheckState.Target>
+                                          <uix:TargetAnchorable CVScreenId="dd9c2686-eddd-4af6-b6bb-56f8a4eceb4c" DesignTimeRectangle="604, 275, 21, 20" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='G HUB' role='document' /&gt;&lt;ctrl name='Lista do seu dispositivo' role='list' /&gt;&lt;ctrl name='G903 LIGHTSPEED' role='list item' /&gt;&lt;ctrl name='Ative ou ligue seu dispositivo.' role='grouping' /&gt;" Guid="90e80273-72d3-4f63-88ef-0ff5ecaa93bc" InformativeScreenshot="85caf733274a1391c105ba9877bc9d86.png" ScopeSelectorArgument="&lt;wnd app='lghub.exe' cls='Chrome_WidgetWin_1' title='Logitech G HUB' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                        </uix:NCheckState.Target>
+                                      </uix:NCheckState>
+                                    </Sequence>
+                                  </ui:InterruptibleDoWhile.Body>
+                                  <ui:InterruptibleDoWhile.Condition>
+                                    <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="Not carregou" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_1" />
+                                  </ui:InterruptibleDoWhile.Condition>
+                                </ui:InterruptibleDoWhile>
+                              </Sequence>
+                            </uix:NCheckState.IfExists>
+                            <uix:NCheckState.IfNotExists>
+                              <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="522,25" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </Sequence>
+                            </uix:NCheckState.IfNotExists>
+                            <uix:NCheckState.Target>
+                              <uix:TargetAnchorable CVScreenId="dd9c2686-eddd-4af6-b6bb-56f8a4eceb4c" DesignTimeRectangle="604, 275, 21, 20" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='G HUB' role='document' /&gt;&lt;ctrl name='Lista do seu dispositivo' role='list' /&gt;&lt;ctrl name='G903 LIGHTSPEED' role='list item' /&gt;&lt;ctrl name='Ative ou ligue seu dispositivo.' role='grouping' /&gt;" Guid="90e80273-72d3-4f63-88ef-0ff5ecaa93bc" InformativeScreenshot="85caf733274a1391c105ba9877bc9d86.png" ScopeSelectorArgument="&lt;wnd app='lghub.exe' cls='Chrome_WidgetWin_1' title='Logitech G HUB' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                            </uix:NCheckState.Target>
+                          </uix:NCheckState>
+                        </Sequence>
+                      </uix:NCheckState.IfNotExists>
+                      <uix:NCheckState.Target>
+                        <uix:TargetAnchorable CVScreenId="fa1c925f-3973-4e29-a408-7f0349b11c4a" DesignTimeRectangle="731, 569, 48, 48" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='G HUB' role='document' /&gt;&lt;ctrl name='Lista do seu dispositivo' role='list' /&gt;&lt;ctrl name='G903 LIGHTSPEED' role='list item' /&gt;&lt;ctrl name='Alternar modo de memória integrada' role='push button' /&gt;" Guid="ff654176-7ca7-4836-8a7a-9edcf92d88f2" InformativeScreenshot="ae934def1d96877975450b3540985713.png" ScopeSelectorArgument="&lt;wnd app='lghub.exe' cls='Chrome_WidgetWin_1' title='Logitech G HUB' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="fa1c925f-3973-4e29-a408-7f0349b11c4a" DesignTimeRectangle="674, 569, 49, 48" ElementType="Button" FullSelectorArgument="&lt;ctrl name='G HUB' role='document' /&gt;&lt;ctrl name='Lista do seu dispositivo' role='list' /&gt;&lt;ctrl name='G903 LIGHTSPEED' role='list item' /&gt;&lt;ctrl name='Iluminação dinâmica para Windows' role='push button' /&gt;" Guid="ba98db17-9a41-437e-9c49-5bc23c053bf7" SearchSteps="Selector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NCheckState.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NCheckState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click '69%'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="560,194" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e0b8ce94-49e3-42fa-9b13-d0d152629179" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="524, 192, 280, 450" ElementType="ListItem" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='G HUB' role='document' /&gt;&lt;ctrl name='Lista do seu dispositivo' role='list' /&gt;&lt;ctrl name='G903 LIGHTSPEED' role='list item' /&gt;" Guid="3185e7b8-45b4-49e9-ae2c-22d179c5c340" InformativeScreenshot="e5d3017c65ce5389bb019ee57f230d47.png" ScopeSelectorArgument="&lt;wnd app='lghub.exe' cls='Chrome_WidgetWin_1' title='Logitech G HUB' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Sequence DisplayName="Esperar Carregar" sap:VirtualizedContainerService.HintSize="560,1554" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:Boolean" Name="carregou" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign sap:VirtualizedContainerService.HintSize="488,175" sap2010:WorkflowViewState.IdRef="Assign_10">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Boolean">[carregou]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Boolean">[False]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="488,1287" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                        <ui:InterruptibleWhile.Body>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="486,1165" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NCheckState DelayBefore="0" DisplayName="Check App State 'Para configurar o LIGHT…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,1105" sap2010:WorkflowViewState.IdRef="NCheckState_7" ScopeIdentifier="e0b8ce94-49e3-42fa-9b13-d0d152629179" Timeout="1" Version="V5">
+                              <uix:NCheckState.IfExists>
+                                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Assign sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="Assign_11">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Boolean">[carregou]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Boolean">[True]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                </Sequence>
+                              </uix:NCheckState.IfExists>
+                              <uix:NCheckState.IfNotExists>
+                                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,594" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Assign sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_12">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Boolean">[carregou]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Boolean">[False]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                  <uix:NWindowOperation DelayAfter="0" DelayBefore="0" DisplayName="Window Operation - Maximize window" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,174" sap2010:WorkflowViewState.IdRef="NWindowOperation_1" Operation="Maximize" ScopeIdentifier="e0b8ce94-49e3-42fa-9b13-d0d152629179" Version="V5" />
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click '69%'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e0b8ce94-49e3-42fa-9b13-d0d152629179" Version="V5">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable DesignTimeRectangle="524, 192, 280, 450" ElementType="ListItem" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='G HUB' role='document' /&gt;&lt;ctrl name='Lista do seu dispositivo' role='list' /&gt;&lt;ctrl name='G903 LIGHTSPEED' role='list item' /&gt;" Guid="3185e7b8-45b4-49e9-ae2c-22d179c5c340" InformativeScreenshot="e5d3017c65ce5389bb019ee57f230d47.png" ScopeSelectorArgument="&lt;wnd app='lghub.exe' cls='Chrome_WidgetWin_1' title='Logitech G HUB' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]" />
+                                    </uix:NClick.Target>
+                                  </uix:NClick>
+                                </Sequence>
+                              </uix:NCheckState.IfNotExists>
+                              <uix:NCheckState.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="22, 968, 48, 48" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='G HUB' role='document' /&gt;&lt;ctrl name='Menu de navegação das configurações do dispositivo' role='grouping' /&gt;&lt;ctrl name='Configurações do dispositivo' role='menu item' /&gt;&lt;ctrl name='Configurações do dispositivo' role='push button' /&gt;" Guid="2bfd41e7-ee7a-47ab-bfc5-d15f087f3b49" InformativeScreenshot="59f5f2743c120ba7c5ef7ee83307e86f.png" ScopeSelectorArgument="&lt;wnd app='lghub.exe' cls='Chrome_WidgetWin_1' title='Logitech G HUB' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                              </uix:NCheckState.Target>
+                            </uix:NCheckState>
+                          </Sequence>
+                        </ui:InterruptibleWhile.Body>
+                        <ui:InterruptibleWhile.Condition>
+                          <VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="Not carregou" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_2" />
+                        </ui:InterruptibleWhile.Condition>
+                      </ui:InterruptibleWhile>
+                    </Sequence>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click 'Configurações do dispos…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="560,194" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e0b8ce94-49e3-42fa-9b13-d0d152629179" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CVScreenId="6d8c9ebb-2849-4cfd-9e17-dbcb416431f1" DesignTimeRectangle="22, 968, 48, 48" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='G HUB' role='document' /&gt;&lt;ctrl name='Menu de navegação das configurações do dispositivo' role='grouping' /&gt;&lt;ctrl name='Configurações do dispositivo' role='menu item' /&gt;&lt;ctrl name='Configurações do dispositivo' role='push button' /&gt;" Guid="14490592-dc60-466e-9216-dbc140daa458" InformativeScreenshot="e2a4d23186301d9381263f7c6819e569.png" ScopeSelectorArgument="&lt;wnd app='lghub.exe' cls='Chrome_WidgetWin_1' title='Logitech G HUB' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <ui:RepeatNumberOfTimesX DisplayName="Repeat Number of Times" sap:VirtualizedContainerService.HintSize="560,444" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_2" NumberOfTimes="2" StartAt="1">
+                      <ui:RepeatNumberOfTimesX.Body>
+                        <ActivityAction x:TypeArguments="x:Int32">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentItem" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,245" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click 'SEMPRE ATIVADO'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e0b8ce94-49e3-42fa-9b13-d0d152629179" Version="V5">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable CVScreenId="0cb6b68b-e564-4457-878c-a16fc9270480" DesignTimeRectangle="282, 508, 136, 19" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='G HUB' role='document' /&gt;&lt;ctrl name='SEMPRE ATIVADO' role='check box' /&gt;&lt;ctrl role='editable text' /&gt;" Guid="13615ad0-3705-4d03-942f-cefbaff9ffc1" InformativeScreenshot="9fef89d8a7b0ed94fcaf1f1ee4455815.png" ScopeSelectorArgument="&lt;wnd app='lghub.exe' cls='Chrome_WidgetWin_1' title='Logitech G HUB' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:RepeatNumberOfTimesX.Body>
+                    </ui:RepeatNumberOfTimesX>
+                    <ui:RepeatNumberOfTimesX DisplayName="Repeat Number of Times" sap:VirtualizedContainerService.HintSize="560,802" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_3" NumberOfTimes="2" StartAt="1">
+                      <ui:RepeatNumberOfTimesX.Body>
+                        <ActivityAction x:TypeArguments="x:Int32">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentItem" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,603" sap2010:WorkflowViewState.IdRef="Sequence_42">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NGetText DelayAfter="0.5" DelayBefore="0" DisplayName="Get Text '1 mW'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,143" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="e0b8ce94-49e3-42fa-9b13-d0d152629179" TextString="[iluminacao]" Version="V5">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable CVScreenId="e3df9d6d-e14f-42ad-83f4-4ec4fe703d1e" DesignTimeRectangle="377, 295, 152, 31" ElementType="Cell" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='G HUB' role='document' /&gt;&lt;ctrl idx='3' role='row' /&gt;&lt;ctrl name='* mW' role='cell' /&gt;" Guid="060dd2f5-b80b-4f6c-8bdb-559fd3760ea0" InformativeScreenshot="05f679c3ae978073614487362ff1016f.png" ScopeSelectorArgument="&lt;wnd app='lghub.exe' cls='Chrome_WidgetWin_1' title='Logitech G HUB' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]" />
+                              </uix:NGetText.Target>
+                            </uix:NGetText>
+                            <If Condition="[iluminacao = &quot;1 mW&quot;]" sap:VirtualizedContainerService.HintSize="452,400" sap2010:WorkflowViewState.IdRef="If_1">
+                              <If.Then>
+                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,245" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DelayBefore="0" DisplayName="Click 'SEMPRE ATIVADO'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e0b8ce94-49e3-42fa-9b13-d0d152629179" Version="V5">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable CVScreenId="0cb6b68b-e564-4457-878c-a16fc9270480" DesignTimeRectangle="282, 508, 136, 19" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='G HUB' role='document' /&gt;&lt;ctrl name='SEMPRE ATIVADO' role='check box' /&gt;&lt;ctrl role='editable text' /&gt;" Guid="13615ad0-3705-4d03-942f-cefbaff9ffc1" InformativeScreenshot="9fef89d8a7b0ed94fcaf1f1ee4455815.png" ScopeSelectorArgument="&lt;wnd app='lghub.exe' cls='Chrome_WidgetWin_1' title='Logitech G HUB' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]" />
+                                    </uix:NClick.Target>
+                                  </uix:NClick>
+                                </Sequence>
+                              </If.Then>
+                              <If.Else>
+                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Sequence>
+                              </If.Else>
+                            </If>
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:RepeatNumberOfTimesX.Body>
+                    </ui:RepeatNumberOfTimesX>
+                    <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="560,114" sap2010:WorkflowViewState.IdRef="Delay_3" />
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.OCREngine>
+                <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                  <ActivityFunc.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                  </ActivityFunc.Argument>
+                </ActivityFunc>
+              </uix:NApplicationCard.OCREngine>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-8, -8, 1936, 1044" FilePath="C:\Program Files\LGHUB\lghub.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPUSURBVFhHzVc7S1xREN7EQnZ9K7qjq9gJNmojFpZWYq0g+Ci20B9g5QOsFBtLm5BOkCBa+AJRRBu1swhIOkHQIgkEic99TfiGO5fZu/euK4ZsBobznu+7c+bMOTcUChAi+kBEJaYNiRPRFyL6RkS/iSjjKOrowxjmkFlXAluu4UKEiD5CnXo7EX0mol9ExAYUdau2H3Oxpt1r71UxwGEiWiaipAFIOZo2gKro03ElgrWwEba2A0VdTkRtRPTVMQKDMAQA75cGeQBzsQZr0YatNouRIwa8m4h+OgsTxmgmGo0KWGNjIzc1NXEsFpO29nvIaAkbqMNmt8Wy4Ha/fzgLXNdHo1ExCFBobW0tRyIRUQUPIGG3AiVsu3HhJREhogsfcPeLy8rKuLy8nDs7O3l4eJjj8bj0+4B7iVibwIhYYHU9ggUT1GUCDoD6+noBHxwc5KOjI354eGDIzc0Nt7a2yrgPsB8Jtb1ssVHpMPstquB1dXVSrq+vC2gmk+F0Oi31q6urQgkoCVVgdVgvfHImiZuw53A7DDc3N/P5+bkAJpNJfnl54VQqJe3b29u3EnAxgKngMSL67mEpX11RUcGbm5sCZoEfHx/55OSEFxcX5SS8EgNeEkoEmDEQQOpEhyQQGINRRPj4+Lj75Qp+fHzMPT09EhPhcLggcM8cEND8EAeBNUsAdbi/pqaGT09PBTSRSEh5eHjIVVVVXFlZKSShejT9FOOwlYfAGghcOg1Jr1gAkN7eXvlyBB0Ekd/V1cXV1dUSFzAKxbGEt+ARzQ22jZzh8QIIaFa9BIE7MyCs4dqJiQkBfn5+lnJra0v6AY55DQ0N3NLSwqurq7y/v887Ozu8u7vr6vb2tmzXyMiIkIRHPF5AeQcCNscLgdLSUp6fnxfgp6cnKZeWlqRf0y8iHycAJwGiR1MF3oPMzc1lrfMQSL+bwPX1tYzjlCBWAAxVz83MzLxKwHcLJicnxUDQFigBZEOI9QDiRj0wOzubj4BswZuCEGMahJjb19fH/f39PDAwIGtWVlayiPtsQU4QFnwMDw4Oco4h6khYmB8KhXhqakrm6tb5eCDnGAYmorGxMTGSLxHpTYkTgTXT09My7/7+XkqfGMhJRHlT8cbGhhjypmIQWVhYEMMgjW0BEACtBzxb4Np3U/HfuowAgPM+OjoqW7e3t8dnZ2eSzp08oMDZl1Eh1zHIFHodY74+XFCaTOjazrqO3/IgGRoayvsg0ZNh7wPnLtCv93+QOI13P8kCbkZ9zPo/yRzw/+JRWrxnuUpRf0xUivprplLUn1OVf/V7/gdYLo6LtHX/bwAAAABJRU5ErkJggg==" InformativeScreenshot="5b8f5a826537dcbd6b11101cc9aa8b46.png" Selector="&lt;wnd app='lghub.exe' cls='Chrome_WidgetWin_1' title='Logitech G HUB' /&gt;" Version="V2">
+                  <uix:TargetApp.Arguments>
+                    <InArgument x:TypeArguments="x:String" />
+                  </uix:TargetApp.Arguments>
+                  <uix:TargetApp.WorkingDirectory>
+                    <InArgument x:TypeArguments="x:String" />
+                  </uix:TargetApp.WorkingDirectory>
+                </uix:TargetApp>
+              </uix:NApplicationCard.TargetApp>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:RetryScope.ActivityBody>
+      <ui:RetryScope.Condition>
+        <ActivityFunc x:TypeArguments="x:Boolean" />
+      </ui:RetryScope.Condition>
+    </ui:RetryScope>
+  </Sequence>
+</Activity>

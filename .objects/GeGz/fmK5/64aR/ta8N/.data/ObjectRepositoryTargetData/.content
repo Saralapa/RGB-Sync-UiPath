@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="6kZCvQIRCU-Ftd_az0ZfXA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="6d8c9ebb-2849-4cfd-9e17-dbcb416431f1" DesignTimeRectangle="22, 968, 48, 48" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='G HUB' role='document' /&gt;&lt;ctrl name='Menu de navegação das configurações do dispositivo' role='grouping' /&gt;&lt;ctrl name='Configurações do dispositivo' role='menu item' /&gt;&lt;ctrl name='Configurações do dispositivo' role='push button' /&gt;" Guid="14490592-dc60-466e-9216-dbc140daa458" ScopeSelectorArgument="&lt;wnd app='lghub.exe' cls='Chrome_WidgetWin_1' title='Logitech G HUB' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="e2a4d23186301d9381263f7c6819e569.png" xmlns="">0bAHQDl5mdkCzX3jmQWZokQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

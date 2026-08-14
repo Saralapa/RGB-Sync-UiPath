@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Logitech G HUB",
+  "Type": "App",
+  "Id": "GeGz5ISxZ0qd7zvp1QlxLQ",
+  "Reference": "AG5LAJT17UaZmNwoUIa7FA/GeGz5ISxZ0qd7zvp1QlxLQ",
+  "Created": "2025-12-02T20:56:03.8264845Z",
+  "Updated": "2025-12-02T20:56:03.8264845Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

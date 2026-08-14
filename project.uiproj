@@ -1,0 +1,6 @@
+{
+  "Name": "RGB Sync",
+  "ProjectType": "Process",
+  "Description": "Start G Hub and Signal RGB",
+  "MainFile": "Main.xaml"
+}

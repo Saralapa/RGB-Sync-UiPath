@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Logitech G HUB",
+  "Type": "Screen",
+  "Id": "64aRoPLqYEiJgpgsvScimQ",
+  "Reference": "AG5LAJT17UaZmNwoUIa7FA/64aRoPLqYEiJgpgsvScimQ",
+  "ParentRef": "AG5LAJT17UaZmNwoUIa7FA/fmK5RC3as0uT9xBTKtpz4w",
+  "Created": "2025-12-02T20:56:04.0310045Z",
+  "Updated": "2025-12-02T20:56:04.0310045Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

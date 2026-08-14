@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="0xThC1PX_ES2SklRQlG0oQ" Reference="AG5LAJT17UaZmNwoUIa7FA/64aRoPLqYEiJgpgsvScimQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-8, -8, 1936, 1044" ContentHash="iztx_QR2vkucp7sa9Q7MVA" FilePath="C:\Program Files\LGHUB\lghub.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPUSURBVFhHzVc7S1xREN7EQnZ9K7qjq9gJNmojFpZWYq0g+Ci20B9g5QOsFBtLm5BOkCBa+AJRRBu1swhIOkHQIgkEic99TfiGO5fZu/euK4ZsBobznu+7c+bMOTcUChAi+kBEJaYNiRPRFyL6RkS/iSjjKOrowxjmkFlXAluu4UKEiD5CnXo7EX0mol9ExAYUdau2H3Oxpt1r71UxwGEiWiaipAFIOZo2gKro03ElgrWwEba2A0VdTkRtRPTVMQKDMAQA75cGeQBzsQZr0YatNouRIwa8m4h+OgsTxmgmGo0KWGNjIzc1NXEsFpO29nvIaAkbqMNmt8Wy4Ha/fzgLXNdHo1ExCFBobW0tRyIRUQUPIGG3AiVsu3HhJREhogsfcPeLy8rKuLy8nDs7O3l4eJjj8bj0+4B7iVibwIhYYHU9ggUT1GUCDoD6+noBHxwc5KOjI354eGDIzc0Nt7a2yrgPsB8Jtb1ssVHpMPstquB1dXVSrq+vC2gmk+F0Oi31q6urQgkoCVVgdVgvfHImiZuw53A7DDc3N/P5+bkAJpNJfnl54VQqJe3b29u3EnAxgKngMSL67mEpX11RUcGbm5sCZoEfHx/55OSEFxcX5SS8EgNeEkoEmDEQQOpEhyQQGINRRPj4+Lj75Qp+fHzMPT09EhPhcLggcM8cEND8EAeBNUsAdbi/pqaGT09PBTSRSEh5eHjIVVVVXFlZKSShejT9FOOwlYfAGghcOg1Jr1gAkN7eXvlyBB0Ekd/V1cXV1dUSFzAKxbGEt+ARzQ22jZzh8QIIaFa9BIE7MyCs4dqJiQkBfn5+lnJra0v6AY55DQ0N3NLSwqurq7y/v887Ozu8u7vr6vb2tmzXyMiIkIRHPF5AeQcCNscLgdLSUp6fnxfgp6cnKZeWlqRf0y8iHycAJwGiR1MF3oPMzc1lrfMQSL+bwPX1tYzjlCBWAAxVz83MzLxKwHcLJicnxUDQFigBZEOI9QDiRj0wOzubj4BswZuCEGMahJjb19fH/f39PDAwIGtWVlayiPtsQU4QFnwMDw4Oco4h6khYmB8KhXhqakrm6tb5eCDnGAYmorGxMTGSLxHpTYkTgTXT09My7/7+XkqfGMhJRHlT8cbGhhjypmIQWVhYEMMgjW0BEACtBzxb4Np3U/HfuowAgPM+OjoqW7e3t8dnZ2eSzp08oMDZl1Eh1zHIFHodY74+XFCaTOjazrqO3/IgGRoayvsg0ZNh7wPnLtCv93+QOI13P8kCbkZ9zPo/yRzw/+JRWrxnuUpRf0xUivprplLUn1OVf/V7/gdYLo6LtHX/bwAAAABJRU5ErkJggg==" Reference="AG5LAJT17UaZmNwoUIa7FA/64aRoPLqYEiJgpgsvScimQ" Selector="&lt;wnd app='lghub.exe' cls='Chrome_WidgetWin_1' title='Logitech G HUB' /&gt;" Version="V2">
+      <TargetApp.Arguments>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.Arguments>
+      <TargetApp.WorkingDirectory>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.WorkingDirectory>
+      <imageRef attrName="InformativeScreenshot" originalValue="5b8f5a826537dcbd6b11101cc9aa8b46.png" xmlns="">0wz5L0tkmn0iOA75m1aLfow</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>
