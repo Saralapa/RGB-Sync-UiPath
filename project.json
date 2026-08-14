@@ -1,5 +1,5 @@
 {
-  "name": "RGB Sync",
+  "name": "RGB-Sync-UiPath",
   "projectId": "d1435e2e-9e4c-4c58-b63a-8688625642f8",
   "description": "Start G Hub and Signal RGB",
   "main": "Main.xaml",

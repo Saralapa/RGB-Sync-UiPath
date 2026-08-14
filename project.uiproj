@@ -1,5 +1,5 @@
 {
-  "Name": "RGB Sync",
+  "Name": "RGB-Sync-UiPath",
   "ProjectType": "Process",
   "Description": "Start G Hub and Signal RGB",
   "MainFile": "Main.xaml"
